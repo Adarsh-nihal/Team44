@@ -32,6 +32,7 @@
             padding-right: 20px;
             color: white;
         }
+        
       
     </style>
 
@@ -44,17 +45,31 @@
         <div class="logo">
             <p>Reebok</p>
         </div>
-        <ul>
-            <li>Men</li>
-            <li>Women</li>
-            <li>Login</li>
-            <li>Signup</li>
+        <ul >
+            <li id="men" >Men</li>
+            <li >Women</li>
+            <li id="login">Login</li>
+            <li id="Signup">Signup</li>
         </ul>
     </nav>
 
 </body>
 
 </html>
-<a href="http://127.0.0.1:5500/loginpage.html">loginpage</a></br>
-<a href="http://127.0.0.1:5500/mens.html">Mens</a></br>
-<a href="http://127.0.0.1:5500/signup.html">Signup Page</a>
+<script>
+    document.querySelector("#men").addEventListener("click",mycall);
+    function mycall(event){
+            location.href = "http://127.0.0.1:5500/mens.html";
+    
+      
+    }
+    document.querySelector("#login").addEventListener("click",mycal);
+    function mycal(event){
+            location.href = "http://127.0.0.1:5500/loginpage.html";
+      
+    }
+    document.querySelector("#Signup").addEventListener("click",mySign);
+    function mySign(event){
+            location.href = "http://127.0.0.1:5500/signup.html";
+    }
+</script>
